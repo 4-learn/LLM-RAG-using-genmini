@@ -1,0 +1,17 @@
+# Traffic Ontology (簡化版)
+# -------------------------
+# 這份檔案描述一個小世界：只有「車」與「規則」
+
+vehicles:
+  ABC123:
+    owner: "黃小明"
+    license_status: "expired"   # 可改成 "valid"
+  XYZ789:
+    owner: "林小美"
+    license_status: "valid"
+
+rules:
+  expired_license:
+    description: "如果車牌過期，就算違規"
+    condition: "license_status == 'expired'"
+
