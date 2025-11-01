@@ -1,0 +1,16 @@
+vehicles:
+  ABC123:
+    license_status: expired
+    type: sedan
+  XYZ789:
+    license_status: valid
+    type: truck
+  AAA111:
+    license_status: expired
+    type: scooter
+  JB2222:
+    type: truck
+    license_status: valid
+rules:
+  expired_license:
+    description: If a vehicle's license_status is 'expired', it is considered a violation.
