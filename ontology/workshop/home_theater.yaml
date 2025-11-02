@@ -1,9 +1,0 @@
-home_theater:
-  air_conditioner:
-    mode: cool
-    temperature: 24
-  light:
-    brightness: dimmer
-    status: 'on'
-  speaker:
-    volume: '+10'

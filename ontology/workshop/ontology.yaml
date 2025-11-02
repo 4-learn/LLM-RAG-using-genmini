@@ -1,0 +1,22 @@
+vehicles:
+  ABC123:
+    type: car
+    license_status: expired
+    owner: Alice
+  XYZ789:
+    type: truck
+    license_status: valid
+    owner: Bob
+  AAA111:
+    type: car
+    license_status: expired
+    owner: Alice
+  CC1234:
+    type: car
+    license_status: expired
+    owner: Bob
+rules:
+  expired_license:
+    description: 若車輛的 license_status 為 expired，代表違規。
+  high_risk_owner:
+    description: 若車主同時有兩台 expired 車輛，則列為高風險。
