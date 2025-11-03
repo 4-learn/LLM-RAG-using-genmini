@@ -65,7 +65,10 @@ FAQ 內容：
                 prompt, 
                 generation_config={"temperature": 0}
             )
-            
+
+            # 印出 response 的原始內容
+            print(f"  候選 {idx+1} 回覆：{response.text.strip()}")
+
             # 提取數字分數
             score_text = response.text.strip()
             score = float(''.join(filter(str.isdigit, score_text)))

@@ -80,4 +80,3 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 response = model.generate_content(prompt, generation_config={"temperature": 0.2})
 
 print("\n🤖 Gemini 回覆：", response.text)
-
