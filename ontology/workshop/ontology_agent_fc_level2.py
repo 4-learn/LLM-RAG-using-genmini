@@ -112,4 +112,3 @@ def chat_with_llm(question: str):
     except Exception:
         parts = [p.text for p in response.candidates[0].content.parts if hasattr(p, "text")]
         return "\n".join(parts) if parts else "⚠️ 無文字回覆。"
-
